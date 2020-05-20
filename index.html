@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Member Directory</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Aditional Styles from https://codepen.io/tobiasdev/pen/XjXgkA/-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    </head>
+    <body>
+        <!--https://youtu.be/TSRtBISvsh4-->
+        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity-->
+
+        <div class="gallery">
+
+            <!--Beginning of one member's profile-->
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <!--Trigger the modal with a link-->
+                <!--https://stackoverflow.com/questions/22565247/bootstrap-modal-link-->
+                <h4><a href="#" class="modal-trigger" data-modal="modal1">Member 1 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <!--https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
+                <!--https://codepen.io/tobiasdev/pen/XjXgkA/-->
+                <div class="modal" id="modal1" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                        <!--https://stackoverflow.com/questions/42121897/boostrap-v4-0-0-alpha-6-model-how-to-center-model-title-->
+                            <h1 class="col-4 modal-title text-left">Member 1 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                        <!--https://mdbootstrap.com/docs/jquery/modals/customization/-->
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!--End of one member's profile-->
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal2">Member 2 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal2" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 2 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal3">Member 3 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal3" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 3 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal4">Member 4 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal4" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 4 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal5">Member 5 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal5" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 5 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal6">Member 6 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal6" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 6 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal7">Member 7 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal7" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 7 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal8">Member 8 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal8" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 8 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal9">Member 9 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal9" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 9 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="img_wrap">
+                <!--Image-->
+                <img src="images/user.jpg" alt="User" class="rounded-circle">
+
+                <h4><a href="#" class="modal-trigger" data-modal="modal10">Member 10 Name</a></h4>
+
+                <!--Basic info-->
+                <div class="caption">
+                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                    <p><span class="bold">House:</span> Dolor</p>
+                    <p><span class="bold">Year:</span> 20XX</p>
+                </div>
+            </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal10" role="dialog">
+                    <div class="modal-sandbox"></div>
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h1 class="col-4 modal-title text-left">Member 10 Name</h1>
+                            <div class="close" style="color:white;">&#10005;</div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="images/user.jpg" alt="User" class="img-fluid z-depth-1-half rounded-circle">
+                                    <p class="title mb-0">Caption 1</p>
+                                    <p class="text-muted " style="font-size: 13px">Caption 2</p>
+                                </div>
+
+                                <div class="col-9">
+                                    <p><span class="bold">Concentration:</span> Lorem ipsum</p>
+                                    <p><span class="bold">House:</span> Dolor</p>
+                                    <p><span class="bold">Year:</span> 20XX</p>
+                                    <p><span class="bold">Position:</span> Analyst</p>
+                                    <p><span class="bold">Bio:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+                                    <p><span class="bold">Email:</span> example@college.harvard.edu</p>
+                                    <p><span class="bold">LinkedIn:</span> https://www.linkedin.com/in/example/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    <script>
+    // https://codepen.io/tobiasdev/pen/XjXgkA/
+        $(".modal-trigger").click(function(e){
+            e.preventDefault();
+            dataModal = $(this).attr("data-modal");
+            $("#" + dataModal).css({"display":"block"});
+            // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+        });
+
+        $(".close, .modal-sandbox").click(function(){
+            $(".modal").css({"display":"none"});
+            // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+        });
+    </script>
+
+    </body>
+</html>

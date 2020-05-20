@@ -1,0 +1,122 @@
+/*https://youtu.be/TSRtBISvsh4*/
+/* https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+
+.gallery {
+  margin: 50px 50px;
+}
+
+.img_wrap {
+  position: relative;
+  width: 300px;
+  float: left;
+}
+
+img {
+  transition: 1s ease;
+  padding: 20px;
+  width: 300px;
+  opacity: 1;
+  display: block;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.img_wrap:hover img {
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+
+.caption {
+    text-align: center;
+    line-height: 12px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #006666 !important;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*Modal styling*/
+/*https://codepen.io/tobiasdev/pen/XjXgkA/*/
+
+.modal, .modal-content {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+  padding: 60px 40px;
+  background: #006666;
+  color: white;
+}
+
+.modal-body {
+  background: white;
+  padding: 60px 40px;
+  margin: 30px;
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Aditional Styles */
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
